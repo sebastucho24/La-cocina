@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EL RINCON DEL SAZÓN</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+      <header>
+        <div class="contenido-header">
+          <div class="logo">
+            <h1>EL RINCON DEL SAZÓN</h1>
+          </div>
+          <nav id="nav">
+            <ul>
+              <li>
+                <a href="#inicio" onclick="seleccionar()">
+                  <i class="fa-solid fa-house"></i>
+                  <span>Inicio</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#sabores" onclick="seleccionar()">
+                  <i class="fa-solid fa-utensils"></i>
+                  <span>Platos</span>
+                </a>
+              </li>
+              <li>
+                <a href="#blog" onclick="seleccionar()">
+                  <i class="fa-solid fa-pen"></i>
+                  <span>Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="#contacto" onclick="seleccionar()">
+                  <i class="fa-solid fa-comments"></i>
+                  <span>Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="social">
+            <a href="tel:+1123-456-7890">
+              <i class="fa-solid fa-phone"></i>+57 300 5181254
+            </a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </header>
+      <!-- Carrusel -->
+      <div class="carrusel">
+        <div
+          class="gallery js-flickity"
+          data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'
+        >
+          <div class="gallery-cell">
+            <img
+              src="WhatsApp Image 2024-09-13 at 11.17.44 PM (1).jpeg"
+              alt=""
+            />
+          </div>
+          <div class="gallery-cell">
+            <img src="WhatsApp Image 2024-09-13 at 11.17.44 PM.jpeg" alt="" />
+          </div>
+          <div class="gallery-cell">
+            <img
+              src="WhatsApp Image 2024-09-13 at 11.17.44 PM (2).jpeg"
+              alt=""
+            />
+          </div>
+          <div class="gallery-cell">
+            <img
+              src="WhatsApp Image 2024-09-13 at 11.17.44 PM (3).jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="info">
+          <h2>Comidas exquistias para tu gusto</h2>
+          <p>Lo mejor de la cocina a un bajo costo</p>
+          <button>Leer Más</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SABORES -->
+    <section id="sabores">
+      <h2>Platos</h2>
+      <div class="fila">
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor1.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Bandeja Paisa:</h3>
+            <p>
+              Un plato emblemático de la región de Antioquia. <br />
+              Incluye carne molida, chicharrón, arroz, fríjoles, huevo frito,
+              plátano maduro, arepa y aguacate.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor2.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Sancocho:</h3>
+            <p>
+              Un caldo espeso que varía según la región. <br />
+              Generalmente lleva carne (pollo, res o cerdo), plátano, yuca, maíz
+              y otras verduras. <br />
+              Muy popular en todo el país.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor3.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Ajiaco:</h3>
+            <p>
+              Sopa tradicional de Bogotá, hecha con pollo, <br />
+              tres tipos de papa (criolla, sabanera y pastusa) y mazorca, <br />
+              servida con alcaparras, crema de leche y aguacate, acompañada con
+              arroz.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fila">
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor4.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Empanadas:</h3>
+            <p>
+              Pequeñas frituras de masa de maíz <br />
+              rellenas de carne, papa y a veces arroz, <br />
+              acompañadas de ají picante. <br />
+              Un snack muy común en todo el país.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor5.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Tamales:</h3>
+            <p>
+              Masa de maíz rellena de carne de cerdo <br />
+              o pollo,zanahorias, guisantes y otros ingredientes, <br />
+              envuelta en hojas de plátano y cocida al vapor.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icono">
+            <img src="img/sabor6.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>Lechona:</h3>
+            <p>
+              Plato típico del Tolima, consiste en un cerdo asado <br />
+              relleno de arroz, arvejas, especias y servido con <br />
+              arepa o trozos de cerdo crujiente.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button>Ver Más</button>
+    </section>
+
+    <!-- SECCION BLOG -->
+    <section id="blog">
+      <h2>Blog</h2>
+      <div
+        class="galeria-blog js-flickity"
+        data-flickity-options='{ "wrapAround":true, "pageDots": true}'
+      >
+        <div class="gallery-cell">
+          <div class="item">
+            <div class="foto">
+              <img src="img/cheff1.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Aventuras en la Cocina Colombiana: La Bandeja Paisa</h3>
+              <p>
+                La Bandeja Paisa es un plato que representa la generosidad de la
+                comida colombiana. Lleno de sabores, texturas y contrastes, es
+                una comida abundante que no solo satisface el hambre, sino que
+                ofrece un viaje gastronómico por la región de Antioquia.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="item">
+            <div class="foto">
+              <img src="img/cheff2.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>
+                El Sabor del Hogar en Cada Cucharada: El Sancocho Colombiano
+              </h3>
+              <p>
+                El sancocho es uno de esos platos que nos conectan con nuestras
+                raíces, donde cada región de Colombia tiene su propia versión de
+                esta sopa reconfortante. Para muchos colombianos, el sancocho no
+                es solo una comida, sino un símbolo de reuniones familiares y
+                celebraciones.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-cell">
+          <div class="item">
+            <div class="foto">
+              <img src="img/cheff3.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Un Clásico Bogotano: El Ajiaco</h3>
+              <p>
+                El ajiaco santafereño es una sopa espesa y reconfortante, típica
+                de Bogotá, que combina ingredientes sencillos con un sabor
+                único. Las papas, el maíz y el pollo forman una deliciosa
+                mezcla, enriquecida con la guasca, una hierba autóctona que le
+                da su sabor característico.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>Leer Más</button>
+    </section>
+
+    <!-- SECCION CONTACTO Y PIE DE PAGINA -->
+    <section id="contacto">
+      <div class="fila">
+        <div class="col">
+          <h1>EL RINCON DEL SAZÓN</h1>
+        </div>
+        <div class="col">
+          <h3>Menú</h3>
+          <a href="#inicio">Inicio</a>
+          <a href="#sabores">Platos</a>
+          <a href="#sabores">Blog</a>
+        </div>
+        <div class="col">
+          <h3>Cheffs</h3>
+          <a href="#">Salome Gomez Montes</a>
+          <a href="#">Alejandra Bedoya Roncancio</a>
+          <a href="#">Jary Isabela González Palacio</a>
+          <a href="#">Alejandro Buriticá Saldarriaga</a>
+        </div>
+        <div class="col">
+          <h3>Social Media</h3>
+          <div class="media">
+            <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
+          </div>
+          <div class="media">
+            <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+          </div>
+        </div>
+        <div class="col">
+          <h3>Contacto</h3>
+          <input type="text" placeholder="Tu correo" />
+          <input type="submit" class="enviar" />
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
