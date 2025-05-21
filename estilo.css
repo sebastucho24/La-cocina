@@ -8,9 +8,7 @@
 html{
     scroll-behavior: smooth;
 }
-/* ***************** */
-/* SECCION I N I C I O */
-/* ***************** */
+
 #inicio{
     height: 100vh;
     display: flex;
@@ -41,6 +39,11 @@ html{
 #inicio header .contenido-header .logo{
     color: #ff8f46;
     font-size: 22px;
+}
+.logo img {
+    width: 200px;   
+    height: auto;
+    display: block;
 }
 #inicio header .contenido-header nav ul li{
     text-align: center;
@@ -126,9 +129,7 @@ html{
 }
 
 
-/* ***************** */
-/* SECCION S A B O R E S */
-/* ***************** */
+
 #sabores{
     padding: 50px 0;
 }
@@ -335,4 +336,18 @@ html{
     #contacto .fila input{
         width: 90%;
     }
+}
+
+.item .icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .icono img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
 }
