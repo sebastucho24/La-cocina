@@ -50,17 +50,17 @@ html{
 }
 #inicio header .contenido-header nav ul li i{
     display: block;
-    color: #a8a8a8;
+    color: #ff8f46;
     margin-bottom: 10px;
 }
 #inicio header .contenido-header nav ul li a{
     display: block;
     text-decoration: none;
-    color:#a8a8a8;
+    color:#ff8f46;
     margin: 0px 20px;
 }
 #inicio header .contenido-header nav ul li:hover i{
-    color: #ff8f46;
+    color: #a8a8a8;
 }
 #inicio header .contenido-header .social a{
     display: inline-block;
@@ -80,7 +80,7 @@ html{
    font-size: 25px;
    color: #a8a8a8;
 }
-/* Carrusel */
+
 #inicio .carrusel{
     position: relative;
     height: 100%;
